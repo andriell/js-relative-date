@@ -1,0 +1,33 @@
+{
+  "name": "relative-date",
+  "version": "1.0.0",
+  "description": "A simple and powerful library for calculating relative dates in JavaScript and TypeScript.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andriell/js-relative-date.git"
+  },
+  "keywords": [
+    "date",
+    "time",
+    "datetime",
+    "relative"
+  ],
+  "author": "Andrey Rybalko",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/andriell/js-relative-date/issues"
+  },
+  "homepage": "https://github.com/andriell/js-relative-date#readme",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.1.3",
+    "ts-jest": "^29.4.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
