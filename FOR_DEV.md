@@ -34,3 +34,9 @@ npm publish --access public
 ").toStrictEqual(new Date('" -> "; // "
 "'));" -> ""
 ```
+
+## Удалить версию можно так
+
+```
+npm unpublish @root.andriell/relative-date@1.0.3
+```
