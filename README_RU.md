@@ -76,7 +76,7 @@ RelativeDateHelper.date({ d: '+7', w: '1', h: '0', i: '0', s: '0' });
 // 18 19 20 21 22 23 24
 // 25 26 27 28 29 30 31
 
-const date = new Date('2020-05-15T16:32:45.248Z');
+const date = new Date('2020-05-15 16:32:45.248');
 
 RelativeDateHelper.date(undefined, { date }); // 2020-05-15 16:32:45
 RelativeDateHelper.date(undefined, { date, withMs: true }); // 2020-05-15 16:32:45.248
@@ -100,7 +100,7 @@ RelativeDateHelper.date({ d: '-5' }, { date }); // 2020-05-10 16:32:45
 RelativeDateHelper.date({ d: '+31' }, { date }); // 2020-06-15 16:32:45
 RelativeDateHelper.date({ d: '-30' }, { date }); // 2020-04-15 16:32:45
 
-RelativeDateHelper.date({ h: '3' }, { date }); // 2020-05-15 00:32:45
+RelativeDateHelper.date({ h: '3' }, { date }); // 2020-05-15 03:32:45
 RelativeDateHelper.date({ h: '+5' }, { date }); // 2020-05-15 21:32:45
 RelativeDateHelper.date({ h: '-5' }, { date }); // 2020-05-15 11:32:45
 RelativeDateHelper.date({ h: '+25' }, { date }); // 2020-05-16 17:32:45
