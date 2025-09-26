@@ -55,7 +55,7 @@ export class RelativeDateHelper {
       if (v2.y.startsWith('+') || v2.y.startsWith('-')) {
         r.setFullYear(r.getFullYear() + n);
       } else {
-        r.setUTCFullYear(n);
+        r.setFullYear(n);
       }
     }
     if (v2.m) {
