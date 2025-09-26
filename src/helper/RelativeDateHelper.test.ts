@@ -13,67 +13,67 @@ test('RelativeDateHelper.date', () => {
   // 11 12 13 14 15 16 17
   // 18 19 20 21 22 23 24
   // 25 26 27 28 29 30 31
-  const date = new Date('2020-05-15 16:32:45.248');
+  const date = new Date('2020-05-15 12:34:56.248');
 
-  expect(RelativeDateHelper.date(undefined, { date })).toStrictEqual(new Date('2020-05-15 16:32:45'));
-  expect(RelativeDateHelper.date(undefined, { date, withMs: true })).toStrictEqual(new Date('2020-05-15 16:32:45.248'));
-  expect(RelativeDateHelper.date({}, { date })).toStrictEqual(new Date('2020-05-15 16:32:45'));
+  expect(RelativeDateHelper.date(undefined, { date })).toStrictEqual(new Date('2020-05-15 12:34:56'));
+  expect(RelativeDateHelper.date(undefined, { date, withMs: true })).toStrictEqual(new Date('2020-05-15 12:34:56.248'));
+  expect(RelativeDateHelper.date({}, { date })).toStrictEqual(new Date('2020-05-15 12:34:56'));
 
-  expect(RelativeDateHelper.date({ y: '1900' }, { date })).toStrictEqual(new Date('1900-05-15 16:32:45'));
-  expect(RelativeDateHelper.date({ y: '+5' }, { date })).toStrictEqual(new Date('2025-05-15 16:32:45'));
-  expect(RelativeDateHelper.date({ y: '-5' }, { date })).toStrictEqual(new Date('2015-05-15 16:32:45'));
+  expect(RelativeDateHelper.date({ y: '1900' }, { date })).toStrictEqual(new Date('1900-05-15 12:34:56'));
+  expect(RelativeDateHelper.date({ y: '+5' }, { date })).toStrictEqual(new Date('2025-05-15 12:34:56'));
+  expect(RelativeDateHelper.date({ y: '-5' }, { date })).toStrictEqual(new Date('2015-05-15 12:34:56'));
 
-  expect(RelativeDateHelper.date({ m: '1' }, { date })).toStrictEqual(new Date('2020-01-15 16:32:45'));
-  expect(RelativeDateHelper.date({ m: '+5' }, { date })).toStrictEqual(new Date('2020-10-15 16:32:45'));
-  expect(RelativeDateHelper.date({ m: '-5' }, { date })).toStrictEqual(new Date('2019-12-15 16:32:45'));
-  expect(RelativeDateHelper.date({ m: '+12' }, { date })).toStrictEqual(new Date('2021-05-15 16:32:45'));
-  expect(RelativeDateHelper.date({ m: '-12' }, { date })).toStrictEqual(new Date('2019-05-15 16:32:45'));
-  expect(RelativeDateHelper.date({ m: '+17' }, { date })).toStrictEqual(new Date('2021-10-15 16:32:45'));
-  expect(RelativeDateHelper.date({ m: '-17' }, { date })).toStrictEqual(new Date('2018-12-15 16:32:45'));
+  expect(RelativeDateHelper.date({ m: '1' }, { date })).toStrictEqual(new Date('2020-01-15 12:34:56'));
+  expect(RelativeDateHelper.date({ m: '+5' }, { date })).toStrictEqual(new Date('2020-10-15 12:34:56'));
+  expect(RelativeDateHelper.date({ m: '-5' }, { date })).toStrictEqual(new Date('2019-12-15 12:34:56'));
+  expect(RelativeDateHelper.date({ m: '+12' }, { date })).toStrictEqual(new Date('2021-05-15 12:34:56'));
+  expect(RelativeDateHelper.date({ m: '-12' }, { date })).toStrictEqual(new Date('2019-05-15 12:34:56'));
+  expect(RelativeDateHelper.date({ m: '+17' }, { date })).toStrictEqual(new Date('2021-10-15 12:34:56'));
+  expect(RelativeDateHelper.date({ m: '-17' }, { date })).toStrictEqual(new Date('2018-12-15 12:34:56'));
 
-  expect(RelativeDateHelper.date({ d: '1' }, { date })).toStrictEqual(new Date('2020-05-01 16:32:45'));
-  expect(RelativeDateHelper.date({ d: '+5' }, { date })).toStrictEqual(new Date('2020-05-20 16:32:45'));
-  expect(RelativeDateHelper.date({ d: '-5' }, { date })).toStrictEqual(new Date('2020-05-10 16:32:45'));
-  expect(RelativeDateHelper.date({ d: '+31' }, { date })).toStrictEqual(new Date('2020-06-15 16:32:45'));
-  expect(RelativeDateHelper.date({ d: '-30' }, { date })).toStrictEqual(new Date('2020-04-15 16:32:45'));
+  expect(RelativeDateHelper.date({ d: '1' }, { date })).toStrictEqual(new Date('2020-05-01 12:34:56'));
+  expect(RelativeDateHelper.date({ d: '+5' }, { date })).toStrictEqual(new Date('2020-05-20 12:34:56'));
+  expect(RelativeDateHelper.date({ d: '-5' }, { date })).toStrictEqual(new Date('2020-05-10 12:34:56'));
+  expect(RelativeDateHelper.date({ d: '+31' }, { date })).toStrictEqual(new Date('2020-06-15 12:34:56'));
+  expect(RelativeDateHelper.date({ d: '-30' }, { date })).toStrictEqual(new Date('2020-04-15 12:34:56'));
 
-  expect(RelativeDateHelper.date({ h: '3' }, { date })).toStrictEqual(new Date('2020-05-15 03:32:45'));
-  expect(RelativeDateHelper.date({ h: '+5' }, { date })).toStrictEqual(new Date('2020-05-15 21:32:45'));
-  expect(RelativeDateHelper.date({ h: '-5' }, { date })).toStrictEqual(new Date('2020-05-15 11:32:45'));
-  expect(RelativeDateHelper.date({ h: '+25' }, { date })).toStrictEqual(new Date('2020-05-16 17:32:45'));
-  expect(RelativeDateHelper.date({ h: '-25' }, { date })).toStrictEqual(new Date('2020-05-14 15:32:45'));
+  expect(RelativeDateHelper.date({ h: '3' }, { date })).toStrictEqual(new Date('2020-05-15 03:34:56'));
+  expect(RelativeDateHelper.date({ h: '+5' }, { date })).toStrictEqual(new Date('2020-05-15 17:34:56'));
+  expect(RelativeDateHelper.date({ h: '-5' }, { date })).toStrictEqual(new Date('2020-05-15 07:34:56'));
+  expect(RelativeDateHelper.date({ h: '+25' }, { date })).toStrictEqual(new Date('2020-05-16 13:34:56'));
+  expect(RelativeDateHelper.date({ h: '-25' }, { date })).toStrictEqual(new Date('2020-05-14 11:34:56'));
 
-  expect(RelativeDateHelper.date({ i: '1' }, { date })).toStrictEqual(new Date('2020-05-15 16:01:45'));
-  expect(RelativeDateHelper.date({ i: '+5' }, { date })).toStrictEqual(new Date('2020-05-15 16:37:45'));
-  expect(RelativeDateHelper.date({ i: '-5' }, { date })).toStrictEqual(new Date('2020-05-15 16:27:45'));
-  expect(RelativeDateHelper.date({ i: '+65' }, { date })).toStrictEqual(new Date('2020-05-15 17:37:45'));
-  expect(RelativeDateHelper.date({ i: '-65' }, { date })).toStrictEqual(new Date('2020-05-15 15:27:45'));
+  expect(RelativeDateHelper.date({ i: '1' }, { date })).toStrictEqual(new Date('2020-05-15 12:01:56'));
+  expect(RelativeDateHelper.date({ i: '+5' }, { date })).toStrictEqual(new Date('2020-05-15 12:39:56'));
+  expect(RelativeDateHelper.date({ i: '-5' }, { date })).toStrictEqual(new Date('2020-05-15 12:29:56'));
+  expect(RelativeDateHelper.date({ i: '+65' }, { date })).toStrictEqual(new Date('2020-05-15 13:39:56'));
+  expect(RelativeDateHelper.date({ i: '-65' }, { date })).toStrictEqual(new Date('2020-05-15 11:29:56'));
 
-  expect(RelativeDateHelper.date({ s: '1' }, { date })).toStrictEqual(new Date('2020-05-15 16:32:01'));
-  expect(RelativeDateHelper.date({ s: '+5' }, { date })).toStrictEqual(new Date('2020-05-15 16:32:50'));
-  expect(RelativeDateHelper.date({ s: '-5' }, { date })).toStrictEqual(new Date('2020-05-15 16:32:40'));
-  expect(RelativeDateHelper.date({ s: '+65' }, { date })).toStrictEqual(new Date('2020-05-15 16:33:50'));
-  expect(RelativeDateHelper.date({ s: '-65' }, { date })).toStrictEqual(new Date('2020-05-15 16:31:40'));
+  expect(RelativeDateHelper.date({ s: '1' }, { date })).toStrictEqual(new Date('2020-05-15 12:34:01'));
+  expect(RelativeDateHelper.date({ s: '+5' }, { date })).toStrictEqual(new Date('2020-05-15 12:35:01'));
+  expect(RelativeDateHelper.date({ s: '-5' }, { date })).toStrictEqual(new Date('2020-05-15 12:34:51'));
+  expect(RelativeDateHelper.date({ s: '+65' }, { date })).toStrictEqual(new Date('2020-05-15 12:36:01'));
+  expect(RelativeDateHelper.date({ s: '-65' }, { date })).toStrictEqual(new Date('2020-05-15 12:33:51'));
 
-  expect(RelativeDateHelper.date({ w: '0' }, { date })).toStrictEqual(new Date('2020-05-17 16:32:45'));
-  expect(RelativeDateHelper.date({ w: '1' }, { date })).toStrictEqual(new Date('2020-05-11 16:32:45'));
-  expect(RelativeDateHelper.date({ w: '2' }, { date })).toStrictEqual(new Date('2020-05-12 16:32:45'));
-  expect(RelativeDateHelper.date({ w: '3' }, { date })).toStrictEqual(new Date('2020-05-13 16:32:45'));
-  expect(RelativeDateHelper.date({ w: '4' }, { date })).toStrictEqual(new Date('2020-05-14 16:32:45'));
-  expect(RelativeDateHelper.date({ w: '5' }, { date })).toStrictEqual(new Date('2020-05-15 16:32:45'));
-  expect(RelativeDateHelper.date({ w: '6' }, { date })).toStrictEqual(new Date('2020-05-16 16:32:45'));
-  expect(RelativeDateHelper.date({ w: '7' }, { date })).toStrictEqual(new Date('2020-05-17 16:32:45'));
-  expect(RelativeDateHelper.date({ w: '8' }, { date })).toStrictEqual(new Date('2020-05-11 16:32:45'));
-  expect(RelativeDateHelper.date({ w: '14' }, { date })).toStrictEqual(new Date('2020-05-17 16:32:45'));
+  expect(RelativeDateHelper.date({ w: '0' }, { date })).toStrictEqual(new Date('2020-05-17 12:34:56'));
+  expect(RelativeDateHelper.date({ w: '1' }, { date })).toStrictEqual(new Date('2020-05-11 12:34:56'));
+  expect(RelativeDateHelper.date({ w: '2' }, { date })).toStrictEqual(new Date('2020-05-12 12:34:56'));
+  expect(RelativeDateHelper.date({ w: '3' }, { date })).toStrictEqual(new Date('2020-05-13 12:34:56'));
+  expect(RelativeDateHelper.date({ w: '4' }, { date })).toStrictEqual(new Date('2020-05-14 12:34:56'));
+  expect(RelativeDateHelper.date({ w: '5' }, { date })).toStrictEqual(new Date('2020-05-15 12:34:56'));
+  expect(RelativeDateHelper.date({ w: '6' }, { date })).toStrictEqual(new Date('2020-05-16 12:34:56'));
+  expect(RelativeDateHelper.date({ w: '7' }, { date })).toStrictEqual(new Date('2020-05-17 12:34:56'));
+  expect(RelativeDateHelper.date({ w: '8' }, { date })).toStrictEqual(new Date('2020-05-11 12:34:56'));
+  expect(RelativeDateHelper.date({ w: '14' }, { date })).toStrictEqual(new Date('2020-05-17 12:34:56'));
 
-  expect(RelativeDateHelper.date({ w: '+5' }, { date })).toStrictEqual(new Date('2020-05-20 16:32:45'));
-  expect(RelativeDateHelper.date({ w: '-5' }, { date })).toStrictEqual(new Date('2020-05-10 16:32:45'));
-  expect(RelativeDateHelper.date({ w: '+31' }, { date })).toStrictEqual(new Date('2020-06-15 16:32:45'));
-  expect(RelativeDateHelper.date({ w: '-30' }, { date })).toStrictEqual(new Date('2020-04-15 16:32:45'));
+  expect(RelativeDateHelper.date({ w: '+5' }, { date })).toStrictEqual(new Date('2020-05-20 12:34:56'));
+  expect(RelativeDateHelper.date({ w: '-5' }, { date })).toStrictEqual(new Date('2020-05-10 12:34:56'));
+  expect(RelativeDateHelper.date({ w: '+31' }, { date })).toStrictEqual(new Date('2020-06-15 12:34:56'));
+  expect(RelativeDateHelper.date({ w: '-30' }, { date })).toStrictEqual(new Date('2020-04-15 12:34:56'));
 
-  expect(RelativeDateHelper.date({ d: '+7', w: '1' }, { date })).toStrictEqual(new Date('2020-05-18 16:32:45'));
-  expect(RelativeDateHelper.date({ d: '+14', w: '1' }, { date })).toStrictEqual(new Date('2020-05-25 16:32:45'));
-  expect(RelativeDateHelper.date({ d: '-7', w: '1' }, { date })).toStrictEqual(new Date('2020-05-04 16:32:45'));
+  expect(RelativeDateHelper.date({ d: '+7', w: '1' }, { date })).toStrictEqual(new Date('2020-05-18 12:34:56'));
+  expect(RelativeDateHelper.date({ d: '+14', w: '1' }, { date })).toStrictEqual(new Date('2020-05-25 12:34:56'));
+  expect(RelativeDateHelper.date({ d: '-7', w: '1' }, { date })).toStrictEqual(new Date('2020-05-04 12:34:56'));
 });
 
 test('RelativeDateHelper.description', () => {
