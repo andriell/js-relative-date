@@ -73,7 +73,7 @@ RelativeDateHelper.date({ d: '+7', w: '1', h: '0', i: '0', s: '0' });
 // 18 19 20 21 22 23 24
 // 25 26 27 28 29 30 31
 
-const date = new Date('2020-05-15 16:32:45.789');
+const date = new Date('2020-05-15 12:34:45.789');
 
 RelativeDateHelper.date(undefined, { date }); // 2020-05-15 12:34:56
 RelativeDateHelper.date(undefined, { date, withMs: true }); // 2020-05-15 12:34:56.789
