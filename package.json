@@ -1,6 +1,6 @@
 {
   "name": "@root.andriell/relative-date",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple and powerful library for calculating relative dates in JavaScript and TypeScript.",
   "main": "index.js",
   "types": "index.d.ts",
