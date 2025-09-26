@@ -13,10 +13,10 @@ test('RelativeDateHelper.date', () => {
   // 11 12 13 14 15 16 17
   // 18 19 20 21 22 23 24
   // 25 26 27 28 29 30 31
-  const date = new Date('2020-05-15 12:34:56.248');
+  const date = new Date('2020-05-15 12:34:56.789');
 
   expect(RelativeDateHelper.date(undefined, { date })).toStrictEqual(new Date('2020-05-15 12:34:56'));
-  expect(RelativeDateHelper.date(undefined, { date, withMs: true })).toStrictEqual(new Date('2020-05-15 12:34:56.248'));
+  expect(RelativeDateHelper.date(undefined, { date, withMs: true })).toStrictEqual(new Date('2020-05-15 12:34:56.789'));
   expect(RelativeDateHelper.date({}, { date })).toStrictEqual(new Date('2020-05-15 12:34:56'));
 
   expect(RelativeDateHelper.date({ y: '1900' }, { date })).toStrictEqual(new Date('1900-05-15 12:34:56'));
