@@ -1,3 +1,3 @@
-import { RelativeDateHelper } from './helper/RelativeDateHelper';
+import { RelativeDateHelper, RelativeDate } from './helper/RelativeDateHelper';
 
-export { RelativeDateHelper };
+export { RelativeDateHelper, RelativeDate };
