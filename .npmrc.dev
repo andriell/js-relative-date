@@ -1,4 +1,0 @@
-email=...
-always-auth=true
-registry=https://registry.npmjs.com/
-//registry.npmjs.com/:_auth="..."
